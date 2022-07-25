@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "entries": [
+    "placeablecb:command_core_in_end_city",
+    "placeablecb:command_chunk_in_jungle_temple",
+    "placeablecb:command_chunk_in_desert_temple",
+    "placeablecb:command_panel_in_bastion_treasure",
+    "placeablecb:command_panel_in_bastion_stable",
+    "placeablecb:command_panel_in_bastion_bridge",
+    "placeablecb:command_panel_in_bastion_other",
+    "placeablecb:command_chunk_in_woodland_mansion",
+    "placeablecb:command_chunk_in_pillager_outpost",
+    "placeablecb:command_chunk_in_shipwreck_supply",
+    "placeablecb:command_chunk_in_nether_bridge",
+    "placeablecb:command_chunk_in_abandoned_mineshaft",
+    "placeablecb:command_chunk_in_igloo",
+    "placeablecb:command_chunk_in_dungeon",
+    "placeablecb:command_chunk_in_buried_treasure",
+    "placeablecb:command_chunk_in_ruined_portal",
+    "placeablecb:command_chunk_in_ruin_big",
+    "placeablecb:command_chunk_in_ruin_small",
+    "placeablecb:redstone_crystal_from_redstone_ore",
+    "placeablecb:charged_redstone_crystal_from_redstone_ore"
+  ]
+}

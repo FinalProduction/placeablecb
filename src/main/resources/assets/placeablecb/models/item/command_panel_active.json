@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "placeablecb:item/command_panel_active"
+  }
+}

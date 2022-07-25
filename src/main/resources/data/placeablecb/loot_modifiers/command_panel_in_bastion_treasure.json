@@ -1,0 +1,10 @@
+{
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/bastion_treasure"
+    }
+  ],
+  "addition": "placeablecb:command_panel",
+  "type": "placeablecb:command_panel_in_bastion_treasure"
+}

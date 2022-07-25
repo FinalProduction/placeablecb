@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "AAA",
+        "CBC",
+        "AAA"
+    ],
+    "key": {
+        "A": {
+            "item": "placeablecb:command_panel_active"
+        },
+        "B": {
+            "item": "placeablecb:command_husk"
+        },
+        "C": {
+            "item": "minecraft:comparator"
+        }
+    },
+    "result": {
+        "item": "minecraft:command_block",
+        "count": 1
+    }
+}

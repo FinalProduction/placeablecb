@@ -1,0 +1,11 @@
+{
+  "item.placeablecb.command_chunk": "Command Chunk",
+  "item.placeablecb.command_core": "Command Core",
+  "block.placeablecb.command_husk": "Command Husk",
+  "item.placeablecb.command_panel": "Command Panel",
+  "item.placeablecb.command_panel_active": "Active Command Panel",
+  "item.placeablecb.activated_quartz": "Activated Quartz",
+  "item.placeablecb.redstone_crystal": "Redstone Crystal",
+  "item.placeablecb.charged_redstone_crystal": "Charged Redstone Crystal",
+  "block.placeablecb.block_redstone_crystal": "Redstone Crystal Block"
+}

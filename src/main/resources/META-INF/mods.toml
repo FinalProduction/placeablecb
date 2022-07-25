@@ -1,0 +1,21 @@
+modLoader = "javafml" #mandatory
+loaderVersion = "[40,)" #mandatory
+license = "ARR"
+[[mods]] #mandatory
+modId = "placeablecb" #mandatory
+version = "${file.jarVersion}" #mandatory
+displayName = "Placeable Command Block" #mandatory
+authors = "Final_Production" #optional
+description = '''Just a placeable command block mod addon for "Cracker's Wither Storm" mod.'''
+[[dependencies.placeablecb]] #optional
+modId = "forge" #mandatory
+mandatory = true #mandatory
+versionRange = "[40,)" #mandatory
+ordering = "NONE"
+side = "BOTH"
+[[dependencies.placeablecb]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.18.2,)"
+ordering = "NONE"
+side = "BOTH"

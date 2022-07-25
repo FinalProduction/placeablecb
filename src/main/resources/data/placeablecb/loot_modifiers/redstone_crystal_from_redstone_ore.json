@@ -1,0 +1,10 @@
+{
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:blocks/redstone_ore"
+    }
+  ],
+  "addition": "placeablecb:redstone_crystal",
+  "type": "placeablecb:redstone_crystal_from_redstone_ore"
+}

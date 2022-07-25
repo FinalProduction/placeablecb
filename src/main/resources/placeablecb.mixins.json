@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "me.final_production.placeablecb.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "placeablecb.refmap.json",
+  "mixins": [
+    "CommandBlockMixin",
+    "PlayerEntityMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

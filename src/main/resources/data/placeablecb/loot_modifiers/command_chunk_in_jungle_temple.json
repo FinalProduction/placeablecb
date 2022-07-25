@@ -1,0 +1,10 @@
+{
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/jungle_temple"
+    }
+  ],
+  "addition": "placeablecb:command_chunk",
+  "type": "placeablecb:command_chunk_in_jungle_temple"
+}

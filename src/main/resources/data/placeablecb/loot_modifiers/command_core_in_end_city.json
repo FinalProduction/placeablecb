@@ -1,0 +1,10 @@
+{
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/end_city_treasure"
+    }
+  ],
+  "addition": "placeablecb:command_core",
+  "type": "placeablecb:command_core_in_end_city"
+}

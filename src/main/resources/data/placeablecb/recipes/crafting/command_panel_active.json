@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " A ",
+        "ABA",
+        " A "
+    ],
+    "key": {
+        "A": {
+            "item": "placeablecb:activated_quartz"
+        },
+        "B": {
+            "item": "placeablecb:command_panel"
+        }
+    },
+    "result": {
+        "item": "placeablecb:command_panel_active",
+        "count": 1
+    }
+}
