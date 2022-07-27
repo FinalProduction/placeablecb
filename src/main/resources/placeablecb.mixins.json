@@ -6,7 +6,8 @@
   "refmap": "placeablecb.refmap.json",
   "mixins": [
     "CommandBlockMixin",
-    "PlayerEntityMixin"
+    "PlayerEntityMixin",
+    "GameMasterBlockItemMixin"
   ],
   "client": [
   ],
