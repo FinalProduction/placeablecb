@@ -6,26 +6,33 @@ import java.util.List;
 import net.minecraftforge.common.ForgeConfigSpec;
 import net.minecraftforge.common.ForgeConfigSpec.BooleanValue;
 import net.minecraftforge.common.ForgeConfigSpec.ConfigValue;
+import net.minecraftforge.fml.ModLoadingContext;
+import net.minecraftforge.fml.config.ModConfig.Type;
 
 public class PlaceablecbCommonConfig {
 
-	final static ForgeConfigSpec.Builder BUILDER = new ForgeConfigSpec.Builder();
-	final static ForgeConfigSpec SPEC;
+	public static ForgeConfigSpec SPEC;
 
-	public static final BooleanValue WHITELIST;
-	public static final ConfigValue<List<String>> DIMIDS;
+	public static ConfigValue<List<? extends String>> DIMIDS;
+	public static BooleanValue WHITELIST;
 	
-	static {
+	public static void init(){
+		ForgeConfigSpec.Builder BUILDER = new ForgeConfigSpec.Builder();
+		BUILDER.comment("Configuration related to placeability per dimension");
 		BUILDER.push("dimension_configs");
-		WHITELIST = BUILDER
-				.comment("Whether if the dimension list should be a whitelist or a blacklist; Default: true")
-				.define("whitelist", true);
 		DIMIDS = BUILDER
-				.comment("The list of dimension ids; Default: [\"minecraft:overworld\"]")
-				.define("dimension_ids", Arrays.asList("minecraft:overworld"));
+				.comment("The list of dimension ids where the player can/can't place Command Blocks; Default: [\"minecraft:overworld\"]")
+				.defineListAllowEmpty(Arrays.asList("dimension_ids"), () -> Arrays.asList("minecraft:overworld"), o -> true);
+		WHITELIST = BUILDER
+				.comment("Whether the dimension list should be a whitelist (true) or a blacklist (false); Default: true")
+				.define("whitelist", true);
 		BUILDER.pop();
 		
+		BUILDER.push("loot_config");
+
 		SPEC = BUILDER.build();
+		
+		ModLoadingContext.get().registerConfig(Type.COMMON, SPEC);
 	}
 	
 	

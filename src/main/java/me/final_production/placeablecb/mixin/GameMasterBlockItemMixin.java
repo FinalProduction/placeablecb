@@ -22,19 +22,15 @@ public class GameMasterBlockItemMixin extends BlockItem{
 	protected BlockState getPlacementState(BlockPlaceContext p_41321_) {
 		BlockState state = super.getPlacementState(p_41321_);
 		Player player = p_41321_.getPlayer();
-		return player != null && 
-				!(isInRightDimension(player) ||
-				player.isCreative())
+		return player != null &&
+				!(player.isCreative() ||
+				isInRightDimension(player))
 				? null : state;
 	}
 	
 	private boolean isInRightDimension(Player player) {
-		System.out.println(PlaceablecbCommonConfig.DIMIDS.get());
-		System.out.println(player.getLevel().dimension().location().toString());
 		boolean contains = PlaceablecbCommonConfig.DIMIDS.get().contains(player.getLevel().dimension().location().toString());
-		if(!PlaceablecbCommonConfig.WHITELIST.get()) {
-			contains = !contains;
-		}
+		if(!PlaceablecbCommonConfig.WHITELIST.get()) contains = !contains;
 		return contains;
 	}
 }

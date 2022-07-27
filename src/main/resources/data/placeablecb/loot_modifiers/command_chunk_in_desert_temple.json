@@ -6,5 +6,7 @@
     }
   ],
   "addition": "placeablecb:command_chunk",
+  "maxItemCount": 3,
+  "chance": 0.12,
   "type": "placeablecb:command_chunk_in_desert_temple"
 }

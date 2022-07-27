@@ -6,5 +6,7 @@
     }
   ],
   "addition": "placeablecb:command_core",
+  "maxItemCount": 1,
+  "chance": 0.02,
   "type": "placeablecb:command_core_in_end_city"
 }

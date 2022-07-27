@@ -6,5 +6,7 @@
     }
   ],
   "addition": "placeablecb:redstone_crystal",
+  "maxItemCount": 1,
+  "chance": 0.07,
   "type": "placeablecb:redstone_crystal_from_redstone_ore"
 }

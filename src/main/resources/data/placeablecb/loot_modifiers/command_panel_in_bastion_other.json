@@ -6,5 +6,7 @@
     }
   ],
   "addition": "placeablecb:command_panel",
+  "maxItemCount": 3,
+  "chance": 0.1,
   "type": "placeablecb:command_panel_in_bastion_other"
 }
