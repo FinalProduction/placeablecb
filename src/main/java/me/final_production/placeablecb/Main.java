@@ -1,5 +1,6 @@
 package me.final_production.placeablecb;
 
+import me.final_production.placeablecb.event.EmpowerEventHandler;
 import me.final_production.placeablecb.init.ItemOverrides;
 import me.final_production.placeablecb.init.ModBlocks;
 import me.final_production.placeablecb.init.ModItems;
@@ -26,5 +27,6 @@ public class Main {
         MinecraftForge.EVENT_BUS.register(this);
     }
     private void Setup(final FMLCommonSetupEvent event) {
+        MinecraftForge.EVENT_BUS.register(new EmpowerEventHandler());
     }
 }
