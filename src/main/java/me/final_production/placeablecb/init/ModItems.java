@@ -33,7 +33,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC).rarity(Rarity.EPIC).stacksTo(64)));
 
     public static final RegistryObject<Item> chargedRedstoneCrystal = Items.register("charged_redstone_crystal",
-            () -> new SimpleFoiledItem(new Item.Properties().tab(CreativeModeTab.TAB_MISC).rarity(Rarity.EPIC).stacksTo(64).fireResistant()));
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC).rarity(Rarity.EPIC).stacksTo(64)));
     public static void register(IEventBus eventBus) {
         Items.register(eventBus);
     }
